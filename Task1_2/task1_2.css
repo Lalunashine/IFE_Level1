@@ -1,132 +1,233 @@
 /* aspects that can be updated: */
-/* 1. list circle */
+
+
+/* 1. list circle : display: flex*/
+
+
 /* 2. header right_most color */
-/* 3. para indentation */
-/* 4. small images */
-/* 5. table border */
+
+
+/* 3. p indentation : &nbsp; */
+
+
+/* 4. small images :img width heigh*/
+
+
+/* 5. table border : border-collapse: collapse;*/
+
+
 /* 6. | style*/
+
+
 /* 7. textarea vs center */
 
 * {
-	/* padding: 0;  affect list circle  */
-	font-family: Helvetica, sans-serif;
-	margin: 0;
+    font-family: '宋体', sans-serif, Verdana, Arial, Helvetica;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-	background-color: rgba(0, 0, 0, 0.8);
-}
-header img{
-	margin: 5px;
-	padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-header a {
-	color: white;
-	font-size: 9px;
-	text-decoration: none;
-}
-header a span {
-	color: grey;
-}	
-
-header ul li {
-	display: inline-block;
-	list-style: square;
-	/*Q1:  circle disapper */
+header img {
+    margin: 1px 0 0.5px;
+    padding: 8.5px 0 8px 40px;
 }
 
 header nav {
-	float: right;
-	margin: 15px 5px;
-	padding: 10px 15px;
-} 
+    float: right;
+    margin: 8px 5px;
+    padding: 10px 15px;
+}
+
+header nav ul {
+    display: flex;
+    margin:
+}
+
+header nav ul li {}
+
+header nav ul li a {
+    color: #eee;
+    font-size: 11.5px;
+    text-decoration: none;
+}
+
+header nav ul li a span {
+    color: #aaa;
+}
 
 #main {
-	background-color: #d9d9d9;
-	border: 1px solid #d9d9d9;
-	width: 100%;
-}	
+    background-color: #d9d9d9;
+    border: 0.5px solid #d9d9d9;
+    width: 100%;
+}
+
 .box {
-	background-color: #fdfdfd;
-	border-right: 3px solid #999; 
-	border-bottom: 3px solid #999; 
-	margin: 20px;
-	padding: 40px 20px 20px 20px;
+    background-color: #fdfdfd;
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+    border-color: #bbb;
+    margin: 19px;
+    padding: 35px 20px 20px;
+    line-height: 2em;
 }
 
-h3,h6 {
-	color: grey;
-	line-height: 2.5em;
+.box h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
-p {
-	line-height: 2em;
+.box h4,
+h6 {
+    color: grey;
+    margin-bottom: 1px;
 }
 
-#sec li{
-	list-style: none;
+.box p {
+    font-size: 15px;
+    line-height: 1.75em;
 }
 
-div.photo {
-	width: 200px;
-	text-align: center;
-	border: 1px solid #999;
-	margin: 20px;
+.first img,.sec img {
+    margin: 20px 0 10px;
 }
 
-table {
-	width: 100%;
+.sec ul {
+    list-style: none;
+    padding: 0 20px;
+}
+.sec ul li {
+	font-size: 1em;
 }
 
-table tr th,td{
-	text-align: left;
-	border: 0;
-	padding: 5px 10px;
-}
-table thead {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-}
-table  {
-	/* border: 1px solid #999; */
-	/*Q2: border! */
-}
-table tfoot {
-	background-color: #999;
+.photo {
+    width: 110px;
+    text-align: center;
+    border: 1px solid #999;
+    margin: 20px 40px;
+    padding: 1px;
 }
 
-#form {
-	border: 0;
-	text-align: center;
+.photo img {
+    width: 90px;
+    height: 90px;
 }
-#form .item_left {
+
+#forth ol {
+    margin: 10px 20px;
+    padding: 0 20px;
+    line-height: 1.5em;
+}
+
+#forth table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#forth table thead {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#forth table tr {
+    line-height: 2em;
+}
+
+#forth table th,
+td {
+    padding: 0 5px;
+    border: 1px solid #d9d9d9;
+}
+
+#forth table tfoot {
+    background-color: #d9d9d9;
+}
+
+.fifth {
+    margin-top: 37px;
+    padding-top: 20px;
+    width: 92%;
+}
+
+.fifth h4 {
+    color: black;
+    border-left: 3px solid #d9d9d9;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+
+.fifth form .form_item {
+    width: 500px ;
+    line-height: 2em;
+    display: flex;
+    margin: 5px 0 5px 153px;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+
+.fifth form .item_left {
+	width: 40%;
 	text-align: right;
 }
-#form .item_right {
-	font-size: 10px;
-	color: grey;
+
+.fifth form .item_right {
+	width: 31%;
 	text-align: left;
+	margin-left: 14px;
 }
 
-#btn {
-	background-color: royalblue;
-	color: white;
-	text-align: center;
-	border-radius: 10px;
-	margin: 0;
+.fifth form .item_right input[type="text"],input[type="password"] {
+	width: 100%;
+	height: 1.75em;
+	border: 1px solid #d9d9d9;
+	padding: 0 2px 1px;
+	vertical-align: top;
+	text-align: left;
 }
-#btn > p {
-	padding: 5px 10px;
+.fifth form .item_right span {
+	line-height: 3.5em;
+	margin: 0;
+	padding: 2px 1px 5px;
+	font-size: 1em;
+	color: grey;
+}
+
+.fifth form .item_right textarea {
+	font-size: 16px;
+}
+
+.fifth form input[type="submit"] {
+	width: 100%;
+	height: 40px;
+	background-color: royalblue;
+	border-radius: 10px;
+	border: 0;
+	text-align: center;
+	color: white;
+	font-size: 16px;
 }
 
 footer {
-	background-color: rgb(0, 0, 0);
-	color: white;
-	text-align: center;
+    background-color: black;
+    padding: 25px;
+    color: white;
+    text-align: center;
 }
 
-footer > p {
-	padding: 30px;
-	font-size: 9px;
+footer span {
+    font-size: 12px;
 }
+
+
+
+
+
+
+
