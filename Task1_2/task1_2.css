@@ -1,25 +1,11 @@
 /* aspects that can be updated: */
-
-
 /* 1. list circle : display: flex*/
-
-
-/* 2. header right_most color */
-
-
+/* 2. header right_most color : unchanged; */
 /* 3. p indentation : &nbsp; */
-
-
 /* 4. small images :img width heigh*/
-
-
-/* 5. table border : border-collapse: collapse;*/
-
-
-/* 6. | style*/
-
-
-/* 7. textarea vs center */
+/* 5. table border : th,td border-collapse: collapse;*/
+/* 6. | style: border-left*/
+/* 7. textarea vs center: use div, margin 80% ....; */
 
 * {
     font-family: '宋体', sans-serif, Verdana, Arial, Helvetica;
@@ -44,10 +30,7 @@ header nav {
 
 header nav ul {
     display: flex;
-    margin:
 }
-
-header nav ul li {}
 
 header nav ul li a {
     color: #eee;
@@ -81,8 +64,7 @@ header nav ul li a span {
     margin-bottom: 8px;
 }
 
-.box h4,
-h6 {
+.box h4,h6 {
     color: grey;
     margin-bottom: 1px;
 }
@@ -117,13 +99,13 @@ h6 {
     height: 90px;
 }
 
-#forth ol {
+.forth ol {
     margin: 10px 20px;
     padding: 0 20px;
     line-height: 1.5em;
 }
 
-#forth table {
+.forth table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
@@ -131,22 +113,22 @@ h6 {
     font-weight: 700;
 }
 
-#forth table thead {
+.forth table thead {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
-#forth table tr {
+.forth table tr {
     line-height: 2em;
 }
 
-#forth table th,
+.forth table th,
 td {
     padding: 0 5px;
     border: 1px solid #d9d9d9;
 }
 
-#forth table tfoot {
+.forth table tfoot {
     background-color: #d9d9d9;
 }
 
@@ -224,10 +206,3 @@ footer {
 footer span {
     font-size: 12px;
 }
-
-
-
-
-
-
-
