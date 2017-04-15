@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* when positioning, parent cannot be relative,
+	otherwise top:50% not work */
+.wrap {
+    width: 400px;
+    height: 200px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    margin: -100px 0 0 -200px;
+    /*  or transform: translate(-50%, -50%); */
+}
+
+.rect {
+    background-color: #ccc;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.left {
+    background-color: #fc0;
+    width: 50px;
+    height: 50px;
+    /* -moz-border-radius: 0 0 50px 0; */
+    border-radius: 0 0 50px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right {
+    background-color: #fc0;
+    width: 50px;
+    height: 50px;
+    /* -moz-border-radius: 50px 0 0 0; */
+    border-radius: 50px 0 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
