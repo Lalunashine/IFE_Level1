@@ -1,0 +1,75 @@
+/* need to be solved: */
+/* member padding bottom 2px auto */
+
+* {
+	margin:  0;
+	padding: 0;
+	font-family: '宋体', sans-serif, Verdana, Arial, Helvetica;
+}
+body {
+	padding: 20px 20px;
+}
+.wrap {
+	background-color: #eee;
+	border: 1px solid #999;
+	padding: 20px;
+	/* as required, should be 20px */
+	overflow: auto;
+}
+
+.team {
+	width: 158px;
+	/* 200-1-20-20-1=158,  */
+	background-color: white;
+	border: 1px solid #999;
+	padding: 20px;
+	/* 80x80 can meet, default value 20px */
+	overflow: auto;
+	float: left;
+}
+
+.team img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #999;
+	float: left;
+}
+
+.team span {
+	float: right;
+}
+
+.intro {
+	background-color: white;
+	border: 1px solid #999;
+	margin-left: 220px;
+	margin-right: 140px;
+	/* start from parent wrap padding */
+}
+
+.intro p {
+	line-height: 1em;
+	font-size: 0.75em;
+	margin: 15px; 
+}
+
+.member {
+	background-color: white;
+	border: 1px solid #999;
+	width: 82px; 
+	/* 80+1+1=82 */
+	/* height: auto; */
+	padding:20px 18px;
+	/* 80x80 can not meet so 120-2-80-2=18 */
+	float: right;
+}
+.member img{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #999;
+	margin: 0 0 15px; 
+	/* space btw img is not 20 */
+}
+.member .last {
+	margin-bottom: 0;
+}
