@@ -2,25 +2,28 @@
     margin: 0;
     padding: 0;
 }
-/* when positioning, parent cannot be relative,
-	otherwise top:50% not work */
+
+/* when positioning, parent cannot be relative, otherwise top:50% not work */
+/* 
 .wrap {
+    background-color: #ccc;
     width: 400px;
     height: 200px;
-
     position: absolute;
     top: 50%;
     left: 50%;
-    
     margin: -100px 0 0 -200px;
-    /*  or transform: translate(-50%, -50%); */
-}
+} */
 
 .rect {
     background-color: #ccc;
     width: 400px;
     height: 200px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+    /*  or transform: translate(-50%, -50%); */
 }
 
 .left {
