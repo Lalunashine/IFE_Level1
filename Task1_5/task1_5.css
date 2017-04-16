@@ -1,0 +1,213 @@
+* {
+    font-family: '宋体', sans-serif, Verdana, Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header img {
+    margin: 1px 0 0.5px;
+    padding: 8.5px 0 8px 40px;
+}
+
+header nav {
+    float: right;
+    margin: 8px 5px;
+    padding: 10px 15px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    color: #eee;
+    font-size: 11.5px;
+    text-decoration: none;
+}
+
+header nav ul li a span {
+    color: #aaa;
+}
+
+#main {
+    background-color: #d9d9d9;
+    border: 0.5px solid #d9d9d9;
+    width: 100%;
+    position:relative;
+}
+.wrap {
+    margin-right: 384px;
+}
+.box {
+    background-color: #fdfdfd;
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+    border-color: #bbb;
+    margin: 19px;
+    padding: 35px 20px 20px;
+    line-height: 2em;
+}
+
+.box h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.box h4,h6 {
+    color: grey;
+    margin-bottom: 1px;
+}
+
+.box p {
+    font-size: 15px;
+    line-height: 1.75em;
+}
+
+.first img,.sec img {
+    margin: 20px 0 10px;
+}
+
+.sec ul {
+    list-style: none;
+    padding: 0 20px;
+}
+.sec ul li {
+    font-size: 1em;
+}
+.thir {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.photo {
+    width: 110px;
+    text-align: center;
+    border: 1px solid #999;
+    margin: 15px;
+    padding: 1px;
+}
+
+.photo img {
+    width: 90px;
+    height: 90px;
+}
+
+.forth ol {
+    margin: 10px 20px;
+    padding: 0 20px;
+    line-height: 1.5em;
+}
+
+.forth table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.forth table thead {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.forth table tr {
+    line-height: 2em;
+}
+
+.forth table th,
+td {
+    padding: 0 5px;
+    border: 1px solid #d9d9d9;
+}
+
+.forth table tfoot {
+    background-color: #d9d9d9;
+}
+
+.fifth {
+    width: 322px;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fifth h4 {
+    color: black;
+    border-left: 3px solid #d9d9d9;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+
+.fifth form .form_item {
+    width: 100% ;
+    line-height: 2em;
+    display: flex;
+    margin: 5px 0;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+
+.fifth form .item_left {
+    width: 30%;
+    text-align: right;
+    /* border: 1px solid red; */
+}
+
+.fifth form .item_right {
+    width: 50%;
+    text-align: left;
+    margin-left: 14px;
+    /* border: 1px solid red; */
+}
+
+.fifth form .item_right input[type="text"],input[type="password"] {
+    width: 88%;
+    height: 1.75em;
+    border: 1px solid #d9d9d9;
+    padding: 0 2px 1px;
+    vertical-align: top;
+    text-align: left;
+}
+.fifth form .item_right span {
+    line-height: 3.5em;
+    margin: 0;
+    padding: 2px 1px 5px;
+    font-size: 1em;
+    color: grey;
+}
+
+.fifth form .item_right textarea {
+    width: 120%;
+    height: 6em;
+    font-size: 16px;
+}
+
+.fifth form input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: royalblue;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 25px 0;
+    color: white;
+    text-align: center;
+}
+
+footer span {
+    font-size: 12px;
+}
