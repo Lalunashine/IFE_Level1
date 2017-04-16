@@ -133,9 +133,9 @@ td {
 }
 
 .fifth {
-    margin-top: 37px;
-    padding-top: 20px;
     width: 92%;
+    margin-top: 37px;
+    margin-right: ;
 }
 
 .fifth h4 {
@@ -182,6 +182,8 @@ td {
 }
 
 .fifth form .item_right textarea {
+    width: 200%;
+    height: 5em;
 	font-size: 16px;
 }
 
