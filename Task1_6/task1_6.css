@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+	width: 890px;
+    padding: 0 45px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid #938e8c;
+    font-family: SimHei, "黑体", STHeiti, "华文黑体", sans-serif;
+    font-size: 12px;
+}
+
+header .date {
+    color: rgba(255, 0, 0, 0.5);
+    width: 100px;
+    height: 61px;
+    float: right;
+}
+
+.date p {
+    line-height: 105px;
+    text-align: right
+}
+
+header .url {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    width: 100px;
+    height: 61px;
+    padding: 0 5px;
+}
+
+.url p {
+    line-height: 105px;
+}
+
+/* ------- upper part ------ */
+.up {
+    margin: 35px 0;
+}
+/* right top: about area --- */
+.up .about {
+	width: 203px;
+	border-top: 2px solid #cc8091;
+	float: right;
+	top: 0;
+	right: 0;
+}
+.about p.t1 {
+	color: #000;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 24px;
+	text-decoration: underline;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+.about p.t1 span {
+	font-size: 1.25em;
+}
+.about p.t2 {
+	color: #676767;
+	font-family: STKaiti, "华文楷体", sans-serif;
+	font-size: 12px;
+	line-height: 10px;
+}
+.about p.num1 {
+	color: #75b86b;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 116px;
+	font-style: italic;
+	/* text-decoration: underline; */
+}
+
+.about .num2{
+	color: #cc8091;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 55px;
+
+	display: inline;
+	float: left;
+}
+.about .css{
+	color: #cc8091;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 21px;
+	padding-top: 15px;
+}
+.about .css .s {
+	font-size: 12px;
+}
+/* left top: image area --- */
+.up .photo {
+    width: 641px;
+    height: 301px;
+    overflow: auto;
+}
+
+.photo img {
+    position: absolute;
+    z-index: -1;
+}
+
+.photo .pink {
+    background-color: rgba(200, 0, 100, 0.2);
+    width: 191px;
+    height: 301px;
+    float: right;
+}
+
+.photo .green {
+    background-color: rgba(0, 200, 100, 0.2);
+    width: 191px;
+    height: 301px;
+}
+/* left center: word area --- */
+.up .word {
+    width: 641px;
+    margin: 40px 0;
+}
+
+.word h5 {
+	margin-bottom: 5px;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.word .what h5 {
+	color: #418c59;
+}
+.word .when h5 {
+	color: #d2994f;
+}
+.word .how h5 {
+	color: #cc7680;
+}
+.word p {
+	color: #767777;
+	font-family: STSong, "华文宋体" sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+.word .what {
+	width: 230px;
+	position: absolute;
+}
+.word .when {
+	width: 210px;
+	margin-left: 260px; 
+}
+.word .how {
+	width: 150px;
+	float: right;
+}
+.word .how .prop p{
+	margin: 20px 5px; 
+	color: #231815;
+	font-family:  "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	opacity: 0.7;
+}
+.word .how .prop span {
+	color: #cd4248;
+	font-style: italic;
+}
+
+/* -----------lower part --------------- */
+.down {
+	padding-top: 40px;
+}
+/* right col */
+.down .right {
+	float: right;
+}
+
+.right .card1 {
+	/* border: 1px solid red; */
+	width: 458px;
+	height: 275px;
+	background: url('lib/3.jpg') no-repeat center center;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	position: relative;
+}
+
+.card1 p {
+	width: 300px;
+	height: 61px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #72b16a;
+	font-size: 12px;
+	font-style: italic;
+	word-spacing: 140%;
+
+	position: absolute;
+	bottom: 0;
+	line-height: 80px;
+	padding-left:158px;
+	
+}
+.card1 span {
+	color: white;
+	font-size: 26px;
+
+	position: absolute;
+	bottom: 8px;
+	border-left: 3px solid #72b16a;
+	margin: 0 30px;
+	padding: 5px 10px 2px;
+}
+
+.right .card2 {
+	width: 459px;
+	height: 318px;
+	background-color: rgba(241, 241, 192, 0.8);
+	color: #5a5b5b;
+	margin-top: 30px;
+
+	position: relative;
+}
+/*  triangle bullet
+.down .right .card2 ol {
+	margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+.down .right .card2 ol li:before {
+	content: "lala";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: -1em;
+    top: 0.9em;
+} */
+.card2 ul {
+	font-family: "STSong", "华文宋体" sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 8px 20px 8px 40px;
+	/* border: 1px solid red; */
+    list-style: none;
+}
+
+.card2 ul li:before {
+	/* content: "lala"; */
+	content:"";
+    border-color: navy transparent;
+    border-style: solid;
+    border-width: 0 0.35em 0.45em 0.35em;
+    display: block;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: -1em;
+    top: 1em;
+}
+.card2 ul li {
+	line-height: 20px;
+	padding: 10px 0;
+}
+.card2 ul li p {
+	font-size: 12px;
+	font-style: italic;
+	float: right;
+}
+
+.card2 .hello {
+	width: 180px;
+	color: #5a5b5b;
+	font-family: SimHei, "黑体", STHeiti, "华文黑体", sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+
+	text-indent: 2.75em;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+
+.hello span {
+	color: #d45d5c;
+	font-size: 72px;
+	font-style: normal;
+}
+
+.hello .start {
+	position: absolute;
+	top: 10px;
+	left: -80px;
+}
+.hello .end {
+	position: absolute;
+	bottom: -25px;
+	right:  -15px;
+}
+.card2 .red {
+	width: 260px;
+	height: 100px;
+	background-color: #d45d5c;
+	color: white;
+	font-family: SimHei, "黑体", STHeiti, "华文黑体", sans-serif;
+	padding: 30px 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.red .right {
+	width: 180px;
+	border-left: 2px solid white;
+	padding: 7px 0 6px 8px;
+
+	position: absolute;
+	right: 0;
+}
+
+.right .t1 {
+	font-size: 21px;
+	font-style: italic;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.right .t2 {
+	font-size: 12px;
+	line-height: 6px;
+	margin: 5px 0;
+}
+.red span {
+	font-size: 110px;
+	margin-left: 5px;
+}
+
+/* ----- left col -------- */
+.left {
+	width: 415px;
+	position: relative;
+}
+
+.left .title {
+	color: #11456b;
+	font-family: SimHei, "黑体", STHeiti, "华文黑体", sans-serif;
+	border-bottom: 2px solid #11456b;
+	padding-bottom: 25px;
+}
+.title p {
+	line-height: 16px;
+}
+.title h3 {
+	font-size: 42px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.title h3 span {
+	color: #f5e327;
+	font-size: 72px;
+	font-weight: bold;
+	font-style: italic;
+}
+.title h4 {
+	font-size: 33px;
+	font-weight: bold;
+}
+
+.left .pic {
+	padding: 25px 0;
+}
+
+.pic img{
+	width: 200px;
+	height: 280px;
+	float: right;
+	top:200px;
+	 /* padding-top: 60px; */
+  /* margin-bottom: -10px; */
+	margin: 1em 0 0.5em 1em;
+}
+.pic p {
+	color: #767777;
+	font-family: STSong, "华文宋体" sans-serif;
+	font-size: 12px;
+}
+.pic p.fir:first-letter {
+	color: #f5e327;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 70px;
+	float:left;
+/* 	border: 1px solid red; */
+	line-height: 75px;
+}
+.pic p.idt {
+	text-indent: 2em;
+}
+/* ------- footer ------ */
+footer {
+    border-top: 1px solid #938e8c;
+    color: #d45d5c;
+    font-family: SimHei, "黑体", STHeiti, "华文黑体", sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+footer p {
+	margin: 2px 0 40px;
+    float: right;
+}
