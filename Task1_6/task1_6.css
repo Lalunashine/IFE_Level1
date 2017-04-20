@@ -403,10 +403,10 @@ footer {
     color: #d45d5c;
     font-family: SimHei, "黑体", STHeiti, "华文黑体", sans-serif;
     font-size: 12px;
-    margin-top: 0px;
+    margin-top: 35px;
 }
 
 footer p {
 	margin: 2px 0 40px;
-    float: right;
+	float: right;
 }
