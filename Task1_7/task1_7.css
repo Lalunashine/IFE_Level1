@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+#wrap {
+    width: 1280px;
+}
+
+header {
+    height: 57px;
+    padding: 0 44px;
+}
+
+header nav {
+    float: right;
+}
+
+nav ul {
+    height: 57px;
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+    padding: 14px 23px;
+}
+
+nav a:hover {
+    color: rgba(255, 0, 0, 0.6);
+    font-weight: bold;
+    border-bottom: 3px solid rgba(255, 0, 0, 0.7);
+}
+
+nav a:last-child {
+    color: rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+nav img {
+    vertical-align: top;
+}
+
+header>img {
+    float: left;
+    padding: 11px 0 0 12px;
+}
+
+header h3 {
+    font-size: 21px;
+    padding: 14px 0 0 56px;
+}
+/* main part */
+.intro .start{
+	width: 1165px;
+	height: 467px;
+	background: url('lib/3.jpg') no-repeat top left;
+	opacity: 0.8;
+	color: white;
+	padding: 223px 0 0 115px;
+}
+
+.start h1 {
+	font-size: 60px;
+	font-weight: 400;
+	letter-spacing: 0.2rem;
+	word-spacing: 2%;
+}
+.start p {
+	width: 300px;
+	font-size: 21px;
+	font-weight: lighter;
+	padding: 0 9px;
+	margin: 14px 0; 
+	line-height: 1.5em;
+}
+.start h4 {
+	width: 330px;
+	background-color: rgba(250, 20, 20, 0.9);
+	font-size: 32px;
+	font-weight: lighter;
+	text-align: center;
+	padding: 9px 0 9px;
+	margin: 61px 0 0 11px;
+}
+.target ul {
+	display: flex;
+	list-style: none;
+}
+.target li {
+	width: 320px;
+	padding: 17px 0;
+	margin: 20px 0 5px;
+	border: 1px solid red;
+}
+.target img {
+	text-align: center;
+	margin-left: 136px;
+	border: 1px solid red;
+}
+.target p {
+	width: 165px;
+	color: grey;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid red;
+}
