@@ -38,3 +38,9 @@ task 6: 通过HTML及CSS模拟报纸排版
    http://ife.baidu.com/course/detail/id/99
    
    http://lalunashine.github.io/IFE_Level1/Task1_6/task1_6.html
+   
+task 7: 实现常见的技术产品官网的页面架构及样式布局普通
+
+   http://ife.baidu.com/course/detail/id/102
+   
+   http://lalunashine.github.io/IFE_Level1/Task1_7/task1_7.html
