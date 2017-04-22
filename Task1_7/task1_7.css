@@ -55,241 +55,553 @@ header h3 {
     font-size: 21px;
     padding: 14px 0 0 56px;
 }
+
+
 /* ----------------- main part ------------------ */
-#intro .start{
-	width: 1165px;
-	height: 467px;
-	background: url('lib/3.jpg') no-repeat top left;
-	opacity: 0.8;
-	color: white;
-	padding: 223px 0 0 115px;
+
+#intro .start {
+    width: 1165px;
+    height: 467px;
+    background: url('lib/3.jpg') no-repeat top left;
+    opacity: 0.8;
+    color: white;
+    padding: 223px 0 0 115px;
 }
 
 .start h1 {
-	font-size: 60px;
-	font-weight: 400;
-	letter-spacing: 0.2rem;
-	word-spacing: 2%;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    word-spacing: 2%;
 }
+
 .start p {
-	width: 300px;
-	font-size: 21px;
-	font-weight: lighter;
-	padding: 0 9px;
-	margin: 14px 0; 
-	line-height: 1.5em;
+    width: 300px;
+    font-size: 21px;
+    font-weight: lighter;
+    padding: 0 9px;
+    margin: 14px 0;
+    line-height: 1.5em;
 }
+
 .start a {
-	display: inline-block;
-	width: 340px;
-	color: white;
-	text-decoration: none;
+    display: inline-block;
+    width: 340px;
+    color: white;
+    text-decoration: none;
 }
+
 .start h4 {
-	background-color: rgba(250, 20, 20, 0.9);
-	font-size: 32px;
-	font-weight: lighter;
-	text-align: center;
-	padding: 9px 5px 9px 0;
-	margin: 47px 0 0 11px;
+    background-color: rgba(250, 20, 20, 0.9);
+    font-size: 32px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 9px 5px 9px 0;
+    margin: 47px 0 0 11px;
 }
 
 .target {
-	padding: 25px 0 47px; /* for vertical loc */
-}
-.target ul {
-	display: flex;
-	list-style: none;
-}
-.target ul:first-child li {
-	width: 320px;
-}
-.target img {
-	text-align: center;
-	margin-top: 12px;   /* for vertical loc */
-	margin-left: 136px; /* for horizontal loc */
-}
-.target ul:last-child {
-	padding: 30px 0 20px;
+    padding: 25px 0 47px;
+    /* for vertical loc */
 }
 
-.target ul:last-child li{
-	width: 318.5px;
-	border-right: 2px solid grey;
+.target ul {
+    display: flex;
+    list-style: none;
+}
+
+.target ul:first-child li {
+    width: 320px;
+}
+
+.target img {
+    text-align: center;
+    margin-top: 12px;
+    /* for vertical loc */
+    margin-left: 136px;
+    /* for horizontal loc */
+}
+
+.target ul:last-child {
+    padding: 30px 0 20px;
+}
+
+.target ul:last-child li {
+    width: 318.5px;
+    border-right: 2px solid grey;
 }
 
 .target ul:last-child li:last-child {
-	border: none;
+    border: none;
 }
 
 .target p {
-	width: 160px;
-	height: 52px;
-	color: grey;
-	font-size: 13.5px;
-	text-align: center;
-	vertical-align: top;
-	margin-left: 85px;
+    width: 160px;
+    height: 52px;
+    color: grey;
+    font-size: 13.5px;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 85px;
 }
+
+
 /* -------- setion 2 ------- */
+
 #activity .title {
-	background-color: #e9e9e9;
-	width: 100%;
-	height: 360px;
-	text-align: center;
+    background-color: #e9e9e9;
+    width: 100%;
+    height: 360px;
+    text-align: center;
 }
+
 .title img {
-	margin: 80px 4px 0 0;
+    margin: 80px 4px 0 0;
 }
+
 .title h1 {
-	color: grey;
-	font-size: 53px;
-	font-weight: lighter;
-	margin-top: 22px;
+    color: grey;
+    font-size: 53px;
+    font-weight: lighter;
+    margin-top: 22px;
 }
-.search{
-	width: 1280px;
-	height: 300px;
-	background: url('lib/9.jpg') no-repeat right center;
-	color: white;
-	text-align: center;
-	padding: 20px 0;
+
+.search {
+    width: 1280px;
+    height: 300px;
+    background: url('lib/9.jpg') no-repeat right center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
+
 .search h3 {
-	font-size: 21px;
-	font-weight: lighter;
-	margin: 29px 46.5px 0 0;
+    font-size: 21px;
+    font-weight: lighter;
+    margin: 29px 46.5px 0 0;
 }
+
 .search h3:after {
-	content: " ";
-	border-top: 2px solid white;
+    content: " ";
+    border-top: 2px solid white;
     display: block;
     width: 30px;
     position: relative;
     left: 50%;
-    margin: 7px 0 0 -16px; 
+    margin: 7px 0 0 -16px;
 }
+
 .search p {
-	font-size: 12px;
-	margin: 17px 47px 40px 0;
+    font-size: 12px;
+    margin: 17px 47px 40px 0;
 }
+
+.search form input {
+	width: 225px;
+	height: 35px;
+	font-size: 14px;
+	border: none;
+	margin: 10px 13px;
+	padding-left: 10px;
+}
+
+.search form input[type="submit"] {
+	background-color: rgba(180, 0, 0, 1);
+	color: white;
+}
+.search form datalist:active {
+	/* border: 2px solid rgba(210, 0, 0, 1); */
+}
+
 /* --- section 2.3 */
+
 .city {
-	background-color: #f9f9f9;
-	width: 100%;
-	height: 656px;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 606px;
 }
 
 .city ul {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .city ul li {
-	margin: 100.5px 18.5px;
-	text-align: center;
+    margin: 100.5px 18.5px;
+    text-align: center;
 }
 
 .city img {
-	background-color: white;
-	width: 202px;
-	height: 312px;
-	border: 1px solid #d9d9d9;
-	padding: 11px 7px;
+    background-color: white;
+    width: 202px;
+    height: 312px;
+    border: 1px solid #d9d9d9;
+    padding: 11px 7px;
 }
+
 .city h4 {
-	font-size: 14px;
-	margin-top: 8px;
+    font-size: 14px;
+    margin-top: 8px;
 }
+
 .city h4.sh {
-	font-size: 22px;
-	margin: 0 10px;
-/* 两端对齐:  */
-	height: 25px;
-	text-align: justify;
-	text-align-last: justify;
-	overflow: hidden;
-}	
-
-.city h4.sh:after{
-	content:'lalala';
-	display:inline-block;
-	width: 100%; /* 至此已两端对齐 */
-	height: 0;	/* 连同下一行: hide content */
-	overflow: hidden;  
+    font-size: 22px;
+    margin: 0 10px;
+    /* 两端对齐:  */
+    height: 25px;
+    text-align: justify;
+    text-align-last: justify;
+    overflow: hidden;
 }
+
+.city h4.sh:after {
+    content: 'lalala';
+    display: inline-block;
+    width: 100%;
+    /* 至此已两端对齐 */
+    height: 0;
+    /* 连同下一行: hide content */
+    overflow: hidden;
+}
+
+
 /* 两端对齐。 */
+
 .city p {
-	color: grey;
-	font-size: 12px;
-	margin: 5px 0 8px;
+    color: grey;
+    font-size: 12px;
+    margin: 5px 0 8px;
 }
 
- /* ------- section 3 ------- */
+
+/* ------- section 3 ------- */
+
 #detail ul.fir {
-	text-align: center;
-	display: flex;
+    list-style: none;
+    text-align: center;
+    display: flex;
 }
 
-ul.fir li:first-child { /* left top */
-	width: 850px;
-	height: 364px;
-	background: url('lib/3.jpg') no-repeat top right;
-	color: white;
-	font-size: 22px;
-	list-style: none;
-	padding: 122px 0 79px;
+ul.fir li:first-child {
+    /* left top */
+    width: 850px;
+    height: 364px;
+    background: url('lib/3.jpg') no-repeat top right;
+    color: white;
+    font-size: 22px;
+    padding: 122px 0 79px;
 }
+
 ul.fir li:first-child h2 {
-	font-size: 50px;
-	font-weight: lighter;
+    font-size: 50px;
+    font-weight: lighter;
 }
+
 ul.fir li:first-child h1 {
-	font-size: 140px;
-	font-weight: 500;
-	line-height: 105px;
-	letter-spacing: 10px;
+    font-size: 140px;
+    font-weight: 500;
+    line-height: 105px;
+    letter-spacing: 10px;
 }
 
 ul.fir li:first-child p {
-	width: 160px;
-	display: inline-block;
-	line-height: 1.75em;
-	margin-top: 45px;
+    width: 160px;
+    display: inline-block;
+    line-height: 1.75em;
+    margin-top: 45px;
 }
 
-ul.fir li:last-child {  /* right top */
-	width: 300px;
-	height: 365px;
-	padding: 100px 65px;
+
+/* ----- */
+
+ul.fir li:last-child {
+    /* right top */
+    width: 300px;
+    height: 365px;
+    padding: 100px 65px;
 }
 
 ul.fir li:last-child h4 {
-	color: rgba(0, 0, 0, 0.7);
-	font-size: 20px;
-	margin: 58px 0 12px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    margin: 30px 5px 12px 0;
 }
+
 ul.fir li:last-child span {
-	color: rgba(255, 0, 0, 0.7);
+    color: rgba(255, 0, 0, 0.7);
 }
+
 ul.fir li:last-child p {
-	color: #a9a9a9;
-	font-size: 12px;
-	line-height: 30px;
-	text-align: left;
-	padding: 5px 0 0 7px;
+    color: #a9a9a9;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: left;
+    padding: 5px 0 0 7px;
 }
 
 ul.fir li:last-child a {
-	color: rgba(255, 0, 0, 0.7);
-	font-size: 12px;
-	text-decoration: none;
-	display: inline-block;
-	border: 1px solid rgba(255, 0, 0, 0.7);
-	padding: 7px 28px;
-	margin: 41px 0 0 2px ;
+    color: rgba(255, 0, 0, 0.7);
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    padding: 7px 28px;
+    margin: 41px 0 0 2px;
+}
+
+ul.fir li:last-child:before {
+    content: "";
+    border-color: transparent white;
+    border-style: solid;
+    border-width: 1em 1.5em 1em 0;
+    display: block;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: -89px;
+    top: 168px;
 }
 
 
+/* --- */
 
+ul.sec {
+    text-align: center;
+    list-style: none;
+    display: flex;
+}
+
+ul.sec li.more {
+    /* bottom left */
+    width: 205px;
+    height: 220px;
+    padding: 150px 110px;
+}
+
+ul.sec li.more:first-child {
+    background-color: rgba(210, 0, 0, 0.7);
+    color: white;
+}
+
+ul.sec li.more p {
+    font-size: 20px;
+    margin-top: 19px;
+    line-height: 1.5em;
+}
+
+ul.sec li.more p:after {
+    content: " ";
+    border-top: 2px solid grey;
+    display: block;
+    width: 30px;
+    position: relative;
+    left: 50%;
+    margin: 18px 0 0 -15px;
+}
+
+ul.sec li.more:first-child p:after {
+    border-color: white;
+}
+
+ul.sec li.more a {
+    color: rgba(255, 0, 0, 0.7);
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    margin-top: 25px;
+    padding: 7px 40px 5px;
+}
+
+ul.sec li.more:first-child a {
+    color: white;
+    border: 1px solid white;
+}
+
+ul.sec li:last-child {
+    /* bottom right */
+    width: 430px;
+    height: 520px;
+    background: url('lib/12.jpg') no-repeat left center;
+}
+
+ul.sec li:last-child:before {
+    content: "";
+    border-color: transparent white;
+    border-style: solid;
+    border-width: 1em 0 1em 1.5em;
+    display: block;
+    height: 0;
+    width: 0;
+    position: relative;
+    top: 50%;
+    margin-top: -16px;
+}
+
+
+/* section 4 : join */
+
+#join {
+    height: 550px;
+    padding: 100px;
+}
+
+#join .title {
+    text-align: center;
+    margin: 14px 0 60px;
+}
+
+#join .title h3 {
+    font-size: 21px;
+    font-weight: normal;
+}
+
+#join .title h3:after {
+    content: " ";
+    border-top: 2px solid rgba(255, 0, 0, 0.7);
+    display: block;
+    width: 30px;
+    position: relative;
+    left: 50%;
+    margin: 5px 0 0 -15px;
+}
+
+#join .title p {
+    color: #b9b9b9;
+    font-size: 12px;
+    margin-top: 13px;
+}
+
+#join .form {
+    width: 670px;
+    float: right;
+    margin: 37px 16px;  
+}
+
+#join .form input[type="text"] {
+    width: 295px;
+    height: 40px;
+    background-color: #e9e9e9;
+    font-size: 14px;
+    border: none;
+    padding-left: 15px;
+    margin: 7px;
+}
+
+#join .form textarea {
+    width: 630px;
+    height: 110px;
+    background-color: #e9e9e9;
+    font-size: 14px;
+    border: none;
+    padding: 10px 0 0 15px;
+    margin: 7px;
+}
+#join .form input[type="submit"] {
+	width: 644px;
+    height: 40px;
+ 	background-color: #e9e9e9;
+    font-size: 16px;
+	text-align: center;	
+	border: none;
+    margin: 7px;   
+}
+
+#join .policy {
+	width: 320px;
+	height: 320px;
+	color: grey;
+    margin-top: 95px;
+    padding-left: 38px;
+}
+.policy div{
+	margin: 22px 0 38px;
+	padding: 10px 30px 0 0;
+}
+.policy h4 {
+	font-size: 14px;
+}
+.policy p {
+	font-size: 12px;
+	margin-top: 22px;
+	line-height: 1.75em;
+}
+/* footer */
+footer .contact {
+    height: 260px;
+    background-color: rgba(10, 10, 20, 0.8);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 37px;
+}
+
+.contact p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.contact form {
+    display: inline-block;
+    margin-top: 28px;
+}
+
+.contact form input[type="text"] {
+    width: 420px;
+    height: 40px;
+    color: #d9d9d9;
+    font-size: 15px;
+    border: none;
+    padding-left: 10px;
+}
+
+.contact form input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background-color: rgba(100, 100, 100, 0.9);
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin: 1px 0 0 -4px;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 32px;
+}
+
+.contact ul li {
+    margin: 0 9px;
+}
+
+
+/* last line */
+
+footer section:last-child {
+    height: 36px;
+    background-color: rgba(0, 0, 10, 0.8);
+    color: white;
+    padding: 20px 20px 0;
+}
+
+footer section:last-child a {
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 11px 20px 0 0;
+}
+
+footer section:last-child p {
+    font-size: 11px;
+    margin: 8px 0 0 75px;
+}
