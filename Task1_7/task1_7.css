@@ -363,7 +363,15 @@ ul.fir li:last-child:before {
     left: -89px;
     top: 168px;
 }
-
+ul.fir div span{
+	width: 10px;
+	height: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	margin: 25px 6px;
+}
 
 /* --- */
 
