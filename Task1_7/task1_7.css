@@ -55,8 +55,8 @@ header h3 {
     font-size: 21px;
     padding: 14px 0 0 56px;
 }
-/* main part */
-.intro .start{
+/* ----------------- main part ------------------ */
+#intro .start{
 	width: 1165px;
 	height: 467px;
 	background: url('lib/3.jpg') no-repeat top left;
@@ -79,34 +79,217 @@ header h3 {
 	margin: 14px 0; 
 	line-height: 1.5em;
 }
+.start a {
+	display: inline-block;
+	width: 340px;
+	color: white;
+	text-decoration: none;
+}
 .start h4 {
-	width: 330px;
 	background-color: rgba(250, 20, 20, 0.9);
 	font-size: 32px;
 	font-weight: lighter;
 	text-align: center;
-	padding: 9px 0 9px;
-	margin: 61px 0 0 11px;
+	padding: 9px 5px 9px 0;
+	margin: 47px 0 0 11px;
+}
+
+.target {
+	padding: 25px 0 47px; /* for vertical loc */
 }
 .target ul {
 	display: flex;
 	list-style: none;
 }
-.target li {
+.target ul:first-child li {
 	width: 320px;
-	padding: 17px 0;
-	margin: 20px 0 5px;
-	border: 1px solid red;
 }
 .target img {
 	text-align: center;
-	margin-left: 136px;
-	border: 1px solid red;
+	margin-top: 12px;   /* for vertical loc */
+	margin-left: 136px; /* for horizontal loc */
 }
+.target ul:last-child {
+	padding: 30px 0 20px;
+}
+
+.target ul:last-child li{
+	width: 318.5px;
+	border-right: 2px solid grey;
+}
+
+.target ul:last-child li:last-child {
+	border: none;
+}
+
 .target p {
-	width: 165px;
+	width: 160px;
+	height: 52px;
 	color: grey;
-	font-size: 14px;
+	font-size: 13.5px;
 	text-align: center;
-	border: 1px solid red;
+	vertical-align: top;
+	margin-left: 85px;
 }
+/* -------- setion 2 ------- */
+#activity .title {
+	background-color: #e9e9e9;
+	width: 100%;
+	height: 360px;
+	text-align: center;
+}
+.title img {
+	margin: 80px 4px 0 0;
+}
+.title h1 {
+	color: grey;
+	font-size: 53px;
+	font-weight: lighter;
+	margin-top: 22px;
+}
+.search{
+	width: 1280px;
+	height: 300px;
+	background: url('lib/9.jpg') no-repeat right center;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+.search h3 {
+	font-size: 21px;
+	font-weight: lighter;
+	margin: 29px 46.5px 0 0;
+}
+.search h3:after {
+	content: " ";
+	border-top: 2px solid white;
+    display: block;
+    width: 30px;
+    position: relative;
+    left: 50%;
+    margin: 7px 0 0 -16px; 
+}
+.search p {
+	font-size: 12px;
+	margin: 17px 47px 40px 0;
+}
+/* --- section 2.3 */
+.city {
+	background-color: #f9f9f9;
+	width: 100%;
+	height: 656px;
+}
+
+.city ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.city ul li {
+	margin: 100.5px 18.5px;
+	text-align: center;
+}
+
+.city img {
+	background-color: white;
+	width: 202px;
+	height: 312px;
+	border: 1px solid #d9d9d9;
+	padding: 11px 7px;
+}
+.city h4 {
+	font-size: 14px;
+	margin-top: 8px;
+}
+.city h4.sh {
+	font-size: 22px;
+	margin: 0 10px;
+/* 两端对齐:  */
+	height: 25px;
+	text-align: justify;
+	text-align-last: justify;
+	overflow: hidden;
+}	
+
+.city h4.sh:after{
+	content:'lalala';
+	display:inline-block;
+	width: 100%; /* 至此已两端对齐 */
+	height: 0;	/* 连同下一行: hide content */
+	overflow: hidden;  
+}
+/* 两端对齐。 */
+.city p {
+	color: grey;
+	font-size: 12px;
+	margin: 5px 0 8px;
+}
+
+ /* ------- section 3 ------- */
+#detail ul.fir {
+	text-align: center;
+	display: flex;
+}
+
+ul.fir li:first-child { /* left top */
+	width: 850px;
+	height: 364px;
+	background: url('lib/3.jpg') no-repeat top right;
+	color: white;
+	font-size: 22px;
+	list-style: none;
+	padding: 122px 0 79px;
+}
+ul.fir li:first-child h2 {
+	font-size: 50px;
+	font-weight: lighter;
+}
+ul.fir li:first-child h1 {
+	font-size: 140px;
+	font-weight: 500;
+	line-height: 105px;
+	letter-spacing: 10px;
+}
+
+ul.fir li:first-child p {
+	width: 160px;
+	display: inline-block;
+	line-height: 1.75em;
+	margin-top: 45px;
+}
+
+ul.fir li:last-child {  /* right top */
+	width: 300px;
+	height: 365px;
+	padding: 100px 65px;
+}
+
+ul.fir li:last-child h4 {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 20px;
+	margin: 58px 0 12px;
+}
+ul.fir li:last-child span {
+	color: rgba(255, 0, 0, 0.7);
+}
+ul.fir li:last-child p {
+	color: #a9a9a9;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: left;
+	padding: 5px 0 0 7px;
+}
+
+ul.fir li:last-child a {
+	color: rgba(255, 0, 0, 0.7);
+	font-size: 12px;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid rgba(255, 0, 0, 0.7);
+	padding: 7px 28px;
+	margin: 41px 0 0 2px ;
+}
+
+
+
