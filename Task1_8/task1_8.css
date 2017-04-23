@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. container */
+.grid-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 10px;
+}
+
+/*-- setting border box on all elements inside the grid --*/
+.grid-container * {
+    box-sizing: border-box;
+}
+
+/* 2. row */
+/*-- our cleafix hack -- */
+/*-- make sure everything inside the row stays inside the row --*/
+.row:before,
+.row:after {
+    /* content: ""; */
+    /* display: table; */
+    /* clear: both; */
+}
+
+/* 3.1 column positioning */
+[class*='col-'] {
+    /* CSS3 [attribute*=value] Selector */
+    float: left;
+    /* least error prone */
+    min-height: 1px;
+    /* avoid col stack on top of each */
+    width: 8.33%;
+    padding: 10px;
+    /*-- our gutter -- */
+    /* border: 1px solid #999; */
+    /* column 之间不可以有margin，上面的width只包含content, padding, margin */
+    /* 要想让column分开，在col内加padding，给 p 加 border */
+}
+
+[class*='col-'] > p {
+    height: 50px;
+    background-color: #eee;
+    border: 1px solid #999;
+}
+
+/* 3.2 column width */
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+
+/* 3.3 column responsive design */
+@media all and (max-width:768px) {
+    .col-1 {
+        width: 16.66%;
+    }
+    .col-2 {
+        width: 66.66%;
+    }
+    .col-2 ~ .col-2 {
+        width: 25%;
+    }
+    /*  .col-2:last-child  // wrong
+        .col-2:last-of-type  // not work
+    */
+    .col-4 {
+        width: 50%;
+    }
+    .col-4:last-child {
+        width: 100%;
+    }
+    .col-6:last-of-type {
+        width: 25%;
+    }
+}
